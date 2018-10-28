@@ -17,7 +17,8 @@ Use hardware serial in your .ino file
 
 Set the MODE pin to HIGH (CMD mode) in the setup() method. This will allow the board to take instructions if needed (like renaming)
 
-``` // Set Flora Bluefruit LE to CMD mode
+``` 
+// Set Flora Bluefruit LE to CMD mode
 digitalWrite(BLUEFRUIT_UART_MODE_PIN, HIGH); 
 ```
 
