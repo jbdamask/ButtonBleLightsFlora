@@ -9,14 +9,14 @@ Wire MODE pad to D12 pad on your Flora board
 
 ##Software:
 dd BluefruitConfig.h file
-```#define BLUEFRUIT_UART_MODE_PIN        12```
+```#define BLUEFRUIT_UART_MODE_PIN        12
 Use hardware serial in your .ino file
-```Adafruit_BluefruitLE_UART ble(BLUEFRUIT_HWSERIAL_NAME, BLUEFRUIT_UART_MODE_PIN);```
+Adafruit_BluefruitLE_UART ble(BLUEFRUIT_HWSERIAL_NAME, BLUEFRUIT_UART_MODE_PIN);
 Set the MODE pin to HIGH (CMD mode) in the setup() method. This will allow the board to take instructions if needed (like renaming)
-```// Set Flora Bluefruit LE to CMD mode
-digitalWrite(BLUEFRUIT_UART_MODE_PIN, HIGH);```
+// Set Flora Bluefruit LE to CMD mode
+digitalWrite(BLUEFRUIT_UART_MODE_PIN, HIGH);
 After initialization, set to DATA mode on connect:
-```ble.setMode(BLUEFRUIT_MODE_DATA);```
+ble.setMode(BLUEFRUIT_MODE_DATA);```
 
 ## Demo
 https://www.youtube.com/watch?v=Ffhj39ibOfI
