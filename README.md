@@ -23,7 +23,7 @@ digitalWrite(BLUEFRUIT_UART_MODE_PIN, HIGH);
 
 After initialization, set to DATA mode on connect:
 
-```ble.setMode(BLUEFRUIT_MODE_DATA); 
+``` ble.setMode(BLUEFRUIT_MODE_DATA); 
 ```
 
 ## Demo
