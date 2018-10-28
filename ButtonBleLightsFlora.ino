@@ -183,42 +183,6 @@ void loop(void)
 
   checkForEvent();
   if(isAnimationState){ setLights(); }    
-
-/*
-  int reading = digitalRead(BUTTON_PIN);
-  if(reading != lastButtonState){
-    // reset the debouncing timer
-    lastDebounceTime = millis();
-  }
-
-   // Check for bluetooth input
- if(len != 0) {
-  Serial.println("Bluetooth event detected!");
-  //delay(2000);
-  bl();
- } else if ((millis() - lastDebounceTime) > debounceDelay) {
-    // whatever the reading is at, it's been there for longer than the debounce
-    // delay, so take it as the actual current state:
-    // if the button state has changed:
-    if(reading != buttonState){
-      buttonState = reading;
-      if(buttonState == LOW){
-        if (currentState < maxState)
-        {
-          currentState = currentState + 1;
-        }else{
-          currentState = minState;
-        }
-        Serial.print("Button pressed! New state is: ");
-        Serial.println(currentState);
-        packAndSend(); 
-      }
-    }
-  }
-  lastButtonState = reading;
-  if(isAnimationState){ setLights(); }
-  */
-  //delay(5);
 }
 
 
